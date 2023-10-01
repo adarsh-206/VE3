@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 const mongoUrl = process.env.MONGODB_URL;
-mongoose.connect(mongoUrl, err => {
+mongoose.connect("mongodb://user:user@ac-9qzpedu-shard-00-00.s1peixs.mongodb.net:27017,ac-9qzpedu-shard-00-01.s1peixs.mongodb.net:27017,ac-9qzpedu-shard-00-02.s1peixs.mongodb.net:27017/?ssl=true&replicaSet=atlas-dpr11b-shard-0&authSource=admin&retryWrites=true&w=majority", err => {
   if (err) throw err;
   console.log("Mongodb connected...");
 });
