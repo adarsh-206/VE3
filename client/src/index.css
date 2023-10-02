@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background-image: linear-gradient(to right, rgb(243, 244, 246), rgb(209, 213, 219));
+}
