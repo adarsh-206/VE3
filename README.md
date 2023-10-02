@@ -2,19 +2,6 @@
 
 MERN Task Manager is a web application for basic task management. It allows users to sign up, log in, create, view, update, and delete tasks.
 
-## Table of Contents
-
-- [Features](#features)
-- [Tools and Technologies](#tools-and-technologies)
-- [Dependencies](#dependencies)
-- [Dev-dependencies](#dev-dependencies)
-- [Prerequisites](#prerequisites)
-- [Installation and setup](#installation-and-setup)
-- [Backend API](#backend-api)
-- [frontend pages](#frontend-pages)
-- [npm scripts](#npm-scripts)
-- [Useful Links](#useful-links)
-
 ## Features
 
 ### User-side features
@@ -81,13 +68,6 @@ Following are the major dependencies of the project:
 - jsonwebtoken
 - mongoose
 
-## Dev-dependencies
-
-Following are the major dev-dependencies of the project:
-
-- nodemon
-- concurrently
-
 ## Prerequisites
 
 - Node.js must be installed on the system.
@@ -99,10 +79,10 @@ Following are the major dev-dependencies of the project:
 1. Install all the dependencies
 
    ```sh
-   npm run install-all
+   Go inside client folder and run npm install and also run npm install in parent folder.
    ```
 
-2. Create a file named ".env" inside the backend folder. Add data from .env.example file and substitute your credentials there.
+2. Create a file named ".env" inside the parent folder. Add data from .env.example file and substitute your credentials there.
 
 3. Start the application
 
@@ -125,33 +105,16 @@ Following are the major dev-dependencies of the project:
 - GET      /api/profile
 </pre>
 
-## Frontend pages
-
-<pre>
-- /                 Home Screen (Public home page for guests and private dashboard (tasks) for logged-in users)
-- /signup           Signup page
-- /login            Login page
-- /tasks/add        Add new task
-- /tasks/:taskId    Edit a task
-</pre>
-
 ## npm scripts
 
-At root:
-
-- `npm run dev`: Starts both backend and frontend
-- `npm run dev-server`: Starts only backend
-- `npm run dev-client`: Starts only frontend
-- `npm run install-all`: Installs all dependencies and dev-dependencies required at root, at frontend and at backend.
-
-Inside frontend folder:
+Inside client folder:
 
 - `npm start`: Starts frontend in development mode
 - `npm run build`: Builds the frontend for production to the build folder
 - `npm test`: Launches the test runner in the interactive watch mode
 - `npm run eject`: This will remove the single build dependency from the frontend.
 
-Inside backend folder:
+Inside parent folder:
 
 - `npm run dev`: Starts backend using nodemon.
 - `npm start`: Starts backend without nodemon.
@@ -160,7 +123,7 @@ Inside backend folder:
 
 - This project
 
-  - Github Repo: https://github.com/aayush301/MERN-task-manager
+  - Github Repo: https://github.com/adarsh-206/VE3
 
 - Official Docs
 
@@ -174,7 +137,3 @@ Inside backend folder:
   - Nodejs download: https://nodejs.org/
   - VS Code download: https://code.visualstudio.com/
 
-- Cheatsheets
-  - Git cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
-  - VS Code keyboard shortcuts: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
-  - CSS Selectors Cheatsheet: https://frontend30.com/css-selectors-cheatsheet/
