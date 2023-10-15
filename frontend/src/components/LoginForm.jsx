@@ -8,7 +8,6 @@ import Loader from './utils/Loader';
 import { useEffect } from 'react';
 
 const LoginForm = ({ redirectUrl }) => {
-
   const [formErrors, setFormErrors] = useState({});
   const [formData, setFormData] = useState({
     email: "",

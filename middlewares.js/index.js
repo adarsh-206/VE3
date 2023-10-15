@@ -9,6 +9,7 @@ exports.verifyAccessToken = async (req, res, next) => {
   if (!token) return res.status(400).json({ status: false, msg: "Token not found" });
   let user;
   try {
+
     user = jwt.verify(token, ACCESS_TOKEN_SECRET);
   }
   catch (err) {
