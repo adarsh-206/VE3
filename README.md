@@ -2,8 +2,6 @@
 
 MERN Task Manager is a web application for basic task management. It allows users to sign up, log in, create, view, update, and delete tasks.
 
-## Features
-
 ### User-side features
 
 - Signup

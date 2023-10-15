@@ -5,6 +5,7 @@ const createAccessToken = (payload) => {
   return jwt.sign(payload, ACCESS_TOKEN_SECRET);
 }
 
+
 module.exports = {
   createAccessToken,
 }
